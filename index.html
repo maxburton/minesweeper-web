@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Oh! That's a Minesweeper!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row customPadding">
+        <div class="col" align="center">
+          <h1>Oh! That's a Minesweeper!</h1>
+        </div>
+      </div>
+      <div class="row customPadding">
+        <div class="col-2"></div>
+        <div class="col" align="left" id="score">
+          Score: 0
+        </div>
+        <div class="col" align="center" id="wins"></div>
+        <div class="col" align="right" id="flags">
+          Flags: 0
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div id="gameboard" class="container">
+
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col" align="center">
+          <label for="numMines">Number of mines: </label>
+          <input type="number" id="numMines" min="1" value="20">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col" align="center">
+          <label for="size">Size of grid: </label>
+          <input type="number" id="size" min="5" max="15" value="10">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col" align="center">
+          <button id="generate">Generate</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
